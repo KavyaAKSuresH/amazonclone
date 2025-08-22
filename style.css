@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  
+}
+
+
+/* Navbar 1 */
+#nav1 {
+  height: 60px;
+  background-color: #131921; /* Amazon dark blue */
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 12px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+ 
+}
+
+/* Navbar 1 buttons */
+#nav1 button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+#nav1 button:hover {
+  outline: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+#nav1 > button img {
+  height: 35px;
+  object-fit: contain;
+}
+
+/* Location */
+#Location {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: left;
+  flex-direction: row;
+  padding: 0 8px;
+}
+
+#Location div a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+/* Search Bar */
+#nav1 form {
+  flex: 1;
+  max-width: 650px;
+}
+
+#nav1 form .flex {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+#nav1 form .flex:focus-within {
+  border: 2px solid #febd69; /* Amazon yellow border */
+}
+
+#nav1 input[type="search"] {
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+#nav1 button,
+#nav1 input,
+#nav1 select {
+  border-radius: 0;
+}
+
+/* Navbar 2 */
+#nav2 {
+  height: 45px;
+  background-color: #232f3e; /* Amazon dark blue */
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  overflow: hidden; /* prevent overflow */
+}
+
+/* Sidebar toggle */
+.menu label {
+  background-color: #232f3e;
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: background 0.3s ease;
+}
+
+.menu:hover label {
+  background-color: #37475a;
+}
+
+/* Horizontal nav links */
+#nav22 {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;  /* enable horizontal scroll */
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
+}
+
+#nav22::-webkit-scrollbar {
+  height: 5px;
+}
+
+#nav22::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 2px;
+}
+
+#nav22 a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+#nav22 a:hover {
+  background-color: #37475a;
+  border-radius: 3px;
+}
+.amazon-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      background-color: #fff;
+      height: 500px;
+    }
+    .amazon-card h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .product-img {
+      width: 100%;
+      height: 120px;
+      object-fit:fill;
+      border-radius: 5px;
+    }
+    .product-caption {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .explore-link {
+      display: block;
+      margin-top: 15px;
+      color: #007185;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .explore-link:hover {
+      text-decoration: underline;
+    }
+    .section1 {
+      
+      height: 200px;
+      position: relative;
+      z-index: 1; /* controls which one is on top */
+    }
+
+    .section2 {
+      
+      
+      position: relative;
+      top: -1px; /* moves it upward to overlap */
+      z-index: 2;
+    }
+     .carousel-caption.top-caption {
+    top: 0;
+    bottom: auto;
+    padding-top: 15px;
+  }
+  .section4 .amazon-card{
+    height: 400px;
+  }
+  .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      height: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .product-img {
+      max-height: 150px;
+      object-fit: contain;
+    }
+    .price {
+      color: #B12704;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .rating {
+      color: #FFA41C;
+      font-size: 0.9rem;
+    }
+ .section8 {
+      text-align: center;
+      background: white;
+      padding: 20px 40px;
+      
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 20px;
+     
+      
+      
+      
+      cursor: pointer;
+    }
+    .section8 button:hover {
+      background: #f8bd19 !important;
+    }
+    #search:hover{
+      background-color: #f8bd19 !important;
+    }
